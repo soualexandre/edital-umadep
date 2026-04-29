@@ -1,10 +1,10 @@
 :root {
-  --bg: #f4f6fb;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --primary: #1d4ed8;
-  --primary-dark: #1e40af;
-  --border: #dbe4f0;
+  --bg: #e8f5e9;
+  --text: #0f2d1b;
+  --muted: #35634a;
+  --primary: #1b8f46;
+  --primary-dark: #146c34;
+  --border: #b7dfc0;
   --card: #ffffff;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(120deg, #0f172a, #1e3a8a);
+  background: linear-gradient(120deg, #0f5132, #1b8f46);
   color: #fff;
   padding: 3rem 0 2.6rem;
 }
@@ -88,11 +88,11 @@ h2 {
 }
 
 .button.secondary {
-  background: #0f766e;
+  background: #0a7a3d;
 }
 
 .button.secondary:hover {
-  background: #115e59;
+  background: #075d2f;
 }
 
 .button.ghost {
@@ -137,6 +137,21 @@ iframe {
 
 .date {
   color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.label {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.date-before {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.date-after {
+  color: #15803d;
   font-weight: 700;
 }
 

@@ -1,15 +1,13 @@
 const retificacoes = [
   {
-    titulo: "Período de inscrição ajustado",
-    data: "22/03 a 05/04/2026",
-    descricao:
-      "No cronograma aparecem as datas 22/03 a 31/03 e também 22/03 a 05/04. A coordenação adota a janela mais ampla da versão publicada.",
+    titulo: "Retificação 01 - Período de inscrição",
+    antes: "22/03 a 31/03/2026",
+    depois: "22/03 a 05/04/2026",
   },
   {
-    titulo: "Período de submissão ajustado",
-    data: "06/04 a 10/05/2026",
-    descricao:
-      "No cronograma aparecem 02/04 a 10/05 e 06/04 a 10/05. Mantida a data alinhada ao item 2.5 do edital.",
+    titulo: "Retificação 02 - Período de submissão",
+    antes: "02/04 a 10/05/2026",
+    depois: "06/04 a 10/05/2026",
   },
 ];
 
@@ -48,5 +46,30 @@ function renderLista(elementId, dados, campoTitulo) {
     .join("");
 }
 
-renderLista("retificacoes", retificacoes, "titulo");
+function renderRetificacoes() {
+  const lista = document.getElementById("retificacoes");
+  if (!lista) return;
+
+  lista.innerHTML = retificacoes
+    .map(
+      (item) => `
+        <li>
+          <div class="item-head">
+            <strong>${item.titulo}</strong>
+          </div>
+          <p class="item-note">
+            <span class="label">Antes:</span>
+            <span class="date-before">${item.antes}</span>
+          </p>
+          <p class="item-note">
+            <span class="label">Depois:</span>
+            <span class="date-after">${item.depois}</span>
+          </p>
+        </li>
+      `
+    )
+    .join("");
+}
+
+renderRetificacoes();
 renderLista("cronograma", cronograma, "etapa");
