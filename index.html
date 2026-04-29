@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edital UMADEP - Concurso do Hino Oficial</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="tag">Concurso 2026</p>
+        <h1>Edital Oficial - Hino da UMADEP</h1>
+        <p class="lead">
+          Página estática para divulgar o edital, retificações publicadas e o
+          cronograma resumido do concurso.
+        </p>
+        <a class="button" href="#edital">Ver edital</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="edital" class="card">
+        <h2>Edital</h2>
+        <p>
+          Documento oficial: <strong>EDITAL 001/2026</strong> - Concurso do Hino
+          Oficial da UMADEP.
+        </p>
+        <div class="actions">
+          <a
+            class="button secondary"
+            href="./CONCURSO%20DO%20HINO%20OFICIAL%20DA%20UMADEP.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abrir PDF
+          </a>
+          <a
+            class="button ghost"
+            href="./CONCURSO%20DO%20HINO%20OFICIAL%20DA%20UMADEP.pdf"
+            download
+          >
+            Baixar PDF
+          </a>
+        </div>
+        <iframe
+          title="Edital Concurso Hino UMADEP"
+          src="./CONCURSO%20DO%20HINO%20OFICIAL%20DA%20UMADEP.pdf"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <h2>Retificações</h2>
+        <p class="section-text">
+          Histórico de mudanças identificadas na versão publicada.
+        </p>
+        <ul id="retificacoes" class="timeline"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Cronograma Breve</h2>
+        <p class="section-text">
+          Principais etapas do concurso em ordem cronológica.
+        </p>
+        <ul id="cronograma" class="timeline"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>
+          UMADEP - União de Mocidade das Assembleias de Deus de Paraíso do
+          Tocantins
+        </small>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
